@@ -420,33 +420,361 @@
 
 然后，用锋利的剪刀剪掉涂有胶水的地方。
 
- 
-
+![image](https://github.com/user-attachments/assets/d141a547-8e7c-42ad-bc49-c0d953bdfb29)
 
 按照我在图中的方式拉动你的钓鱼线，它应该会形成一个大结。
 
- 
-
+![image](https://github.com/user-attachments/assets/29b5c86d-77f1-4cae-8701-134fea36b9dc)
 
 拧紧结，将螺钉和垫圈放在结上，并在拧紧螺钉时保持结被拉住。
 
- 
-
+![image](https://github.com/user-attachments/assets/4de50987-79b3-425b-af13-a57249657ee7)
 
 模具中有一个孔，用于插入直径为2毫米的部件，以便在模制硅胶中形成一个复位，以便磁铁复位。圆盘磁铁直径为2.5毫米x1毫米。
 
- 
+圆盘磁铁直径为2.5毫米x1毫米：https://www.supermagnete.fr/eng/disc-magnets-neodymium/disc-magnet-2.5mm-1mm_S-2.5-01-N52N
 
+![image](https://github.com/user-attachments/assets/22282bb9-54ce-4df3-ba33-95458c1867b3)
 
 让它穿过2毫米。我使用了双组分透明RTV硅胶Ecoflex™ 00-10
 
- 
-
+![image](https://github.com/user-attachments/assets/04f78ce9-cc76-4805-b826-a56cb8f3b4ef)
 
 用硅胶套件将每个指尖上的模制部件粘合起来
 
+![image](https://github.com/user-attachments/assets/185a9587-f321-4a26-b6e2-cc647aa1c22b)
 
 用指南针确定磁铁的南极。
 
+![image](https://github.com/user-attachments/assets/9ff3cddd-e03d-47cb-916b-9f8547524c80)
 
 将磁铁的南极朝向霍尔传感器，插入硅胶模制尖端的复位孔中。请使用木质牙签，因为任何金属工具都会粘在磁铁上。这项工作很精细，必须操作到位才能获得正确的结果。用一滴硅胶套装固定磁铁位置，并等待其干燥。使用此页面https://inmoov.fr/test-your-finger-sensor/测试您的传感器。
+
+## 如何使用手指传感器
+
+手指传感器可以用于各种功能。抓取鸡蛋或瓶子需要不同的压力。握手也需要检测施加的压力。触摸传感器有很多种实现方法，我做过两个版本，成本都非常低。带霍尔传感器的版本比原来的泡沫版本精确得多。
+
+ 
+
+概括：
+
+电子版（2 个版本）
+设置
+利用率
+
+
+**带霍尔传感器的电子装置**
+
+-此版本采用霍尔传感器和磁铁完成。
+
+-当磁铁靠近霍尔传感器时，传感器会测量该值。
+
+-该值被发送到模拟 Arduino 引脚。
+
+-手部教程中解释了手指上传感器的组装。
+
+![image](https://github.com/user-attachments/assets/667958b0-27b5-4643-ae75-68a0d971f115)
+
+![image](https://github.com/user-attachments/assets/96c12c39-5f44-4c93-86cf-f5f0e7344b25)
+
+![image](https://github.com/user-attachments/assets/eeb05fd9-86d2-40a5-8516-f03c4e863a2d)
+
+
+**电子泡沫传感器**
+
+- 手指传感器的原始版本是用 2 块铜板连接到一块防静电泡沫制成的。
+
+-当泡沫被压缩时，两块铜板之间的电流流动更强。
+
+-模拟 Arduino 引脚检测变化。
+
+-手部教程中解释了手指上传感器的组装。
+
+![image](https://github.com/user-attachments/assets/c6a16158-fbf8-4714-8c78-10a6b6fa36af)
+
+![image](https://github.com/user-attachments/assets/519d8f25-90b7-40a2-882e-9c2c079b3452)
+
+
+**设置**
+
+打开 InMoov/config/ service_J_SensorFinger.config并进行如下设置。
+
+[MAIN]
+
+rightHandSensorActivated=True
+rightHandSensorArduino=right
+
+right_thumb_Psi_min=544当传感器未按下时，请在此处输入最大值。
+right_thumb_Psi_low=545一般情况下，取最小值，如果使用 AH3503 霍尔传感器，则加 1。
+right_thumb_Psi_mid=547一般情况下，取最小值，加 4。
+right_thumb_Psi_max=550一般情况下，取最小值，加 7。
+
+right_index_Psi_min=538
+right_index_Psi_low=539
+right_index_Psi_mid=542
+right_index_Psi_max=545
+
+添加每个手指传感器的值……
+
+要检查手指传感器是否工作正常并查看其值，您可以在 Python 窗口中输入并执行：
+
+sensorTimerStart()
+
+并在 python 选项卡中查看结果。
+
+您可以使用以下方法关闭传感器定时器：
+
+sensorTimerStop()
+
+**利用率**
+
+<h2>我们有三个选择：</h2>
+
+1-如果您已经设置了传感器配置文件，某些手势将自动使用传感器。
+
+2-直接在 Arduino 上使用代码进行测试。
+
+3-使用 MyRobotLab 中的 Python 代码进行测试。（如果您没有运行 START_INMOOV）
+
+<h3>第一个选项：</h3>
+
+shakehands()当手闭合时，手势将自动使用传感器。
+
+您可以将手势所需的压力调整为 0 到 3 之间的值。当传感器达到所需压力时，手指伺服器将停止其位置并禁用。
+
+if rightHandSensorActivated:
+    rightHandSensorON()
+    sleep(1.5)
+    rightThumbPressure=1 # Pressure range between 0-3
+    rightIndexPressure=1
+    rightMajeurePressure=1
+    rightRingFingerPressure=1
+    rightPinkyPressure=1
+    i01.rightHand.moveTo(79,170,180,180,180,180)
+    sleep(2)
+    rightHandSensorOFF()
+else:
+  i01.rightHand.moveTo(79,90,140,130,122,180)
+
+
+<h3>第二种选择：</h3>
+
+-将此代码上传到您的 Arduino 板：
+
+// A small script to test one servo and one sensor.
+
+// Connect one sensor cable to the PIN A0, and the other cable
+// to the 5V of your Arduino.
+// The servo will be connected to your power supply (Gnd,Vcc)
+// and to the PIN 2 of your Arduino.
+// Set the serial of your Arduino at 57600 in device manager
+// More detail on connection here https://inmoov.fr/test-your-finger-sensor
+    
+#include <Servo.h>
+
+const int servoPin = 2;
+const int sensorPin = A0;
+int sensorReading;
+
+int position;
+
+Servo myservo;
+
+void setup(){
+  Serial.begin(57600);
+  myservo.write(30);  // Closed claw.
+  position = 30;
+  myservo.attach(servoPin );
+}
+
+void loop(){
+  sensorReading = analogRead(sensorPin);
+    Serial.print("Analog reading = ");
+    Serial.print(sensorReading); // the raw analog reading
+    // We'll have a few threshholds, qualitatively determined
+    if (sensorReading < 25) {
+    Serial.println(" - No pressure");
+    } else if (sensorReading < 30) {
+    Serial.println(" - Light touch");
+    } else if (sensorReading < 50) {
+    Serial.println(" - Light squeeze");
+    } else if (sensorReading < 110) {
+    Serial.println(" - Medium squeeze");
+    } else if (sensorReading < 200) {
+    Serial.println(" - Big squeeze");
+    }
+    delay(1000);
+  openClaw();
+  delay(3000);
+  closeClaw();
+  delay(3000);
+}
+
+void openClaw() {
+  for (; position < 130;  position++) {
+    myservo.write(position);
+    if(analogRead(sensorPin) > 30)
+      break;
+  }
+}
+
+void closeClaw() {
+  myservo.write(30);  // Go to open position
+  position = 30;
+}
+ 
+
+- 连接传感器（以 FSR 传感器为例）和伺服电机。有些伺服电机需要的电流过大，无法直接由 Arduino 供电。如果您的伺服电机抖动或运动不稳定，请为伺服电机连接一个额外的电源，并确保将 Arduino 连接到该额外的电源，如下所示：
+
+![image](https://github.com/user-attachments/assets/f679cee8-a6ce-4fd1-94dd-6fda5ae97c99)
+
+-当通电时，手指会自动缓慢闭合，如果传感器检测到压力，则会在 Arduino.exe 监视器中显示信息。
+
+-您可能需要更改代码中的传感器值以达到更好的调整。
+
+为此，请检查监视器上的结果并根据需要直接在代码中更改这些值：
+
+(sensorReading < 25)
+(sensorReading < 30)
+(sensorReading < 50)
+(sensorReading < 110)
+(sensorReading < 200)
+ 
+
+ 
+<h3>第三种选择：</h3>
+
+这里我们假设您已经安装了 MyRobotLab 并且知道如何使用它，如果没有，请先转到此页面。
+
+-双击 MRL 目录中的“myrobotlab.jar”启动 MyRobotLab。
+
+-按照第一个选项教程中的图像，在 Arduino 和伺服电机之间建立相同的连接。
+
+-将此 python 脚本复制并粘贴到 MyRobotLab 中的 python 选项卡。
+
+#这个简单的传感器 InMoov 脚本在 MyRobotLab 版本 1.0.2693 上进行了测试
+#可以通过 Oscope 和手指动作看到结果。
+#将一根传感器电缆连接到 PIN A0，将另一根电缆连接到 Arduino 的 5V。
+#Servo 将连接到 Arduino 的引脚 2。
+#根据您的Arduino板更改代码中的COM端口。
+
+leftPort = "COM10"
+
+Voice="US-English_Matthew"
+mouth = Runtime.createAndStart("i01.mouth", "NaturalReaderSpeech")
+#mouth.installComponentsAcceptLicense(Voice)
+mouth.setVoice(Voice)
+mouth.setRate(-10)
+
+i01 = Runtime.createAndStart("i01", "InMoov")
+i01.startMouth()
+leftHand = Runtime.create("i01.leftHand","InMoovHand")
+i01.startLeftHand(leftPort)
+i01.leftHand.index.map(0,180,25,165)
+
+left=Runtime.create("i01.left", "Arduino")
+left.setBoard("atmega2560")
+left = Runtime.start("i01.left", "Arduino")
+left.connect("COM10")
+
+ 
+def publishPin(pins): 
+    for pin in range(0, len(pins)):
+        print pins[pin].address, pins[pin].value
+        if pins[pin].value<=540:
+          print "No pressure"
+        if pins[pin].value>=541 and pins[pin].value<=542:
+          print "Low pressure"
+        if pins[pin].value>=543 and pins[pin].value<=544:
+          print "Soft pressure"
+          FingerGoesBack()
+        if pins[pin].value>=545:
+          print "High pressure"
+          FingerGoesBack()
+          i01.mouth.speak(u"OUCH, that hurts") 
+ 
+left.addListener("publishPinArray","python","publishPin")
+sleep(5)
+left.enablePin(54,1) # 54 is pin A0, Number 1 is how many polls/second
+
+i01.leftHand.setAutoDisable(True)
+
+def moveFingerSlowly():
+    i01.leftHand.index.enable()
+    i01.leftHand.index.setVelocity(25)
+    sleep(2)
+    i01.leftHand.index.moveTo(180)
+
+def FingerGoesBack():
+    i01.leftHand.index.enable()
+    i01.leftHand.index.setVelocity(-1)
+    i01.leftHand.index.moveTo(0)
+ 
+#此简单的 InMoov 传感器脚本已在 MyRobotLab 1.1.812 版本上测试。
+#结果可在 Oscope 中通过手指动作查看。
+#将一根传感器线缆连接到 Arduino 的 A0 引脚，另一根线缆连接到 Arduino 的 5V 接口。
+#伺服器将连接到 Arduino 的 2 引脚。
+#根据您的 Arduino 开发板更改代码中的 COM 端口。
+
+
+Voice="Mark" 
+i01_mouth = Runtime.start("i01.mouth", "MarySpeech") 
+#i01_mouth.installComponentsAcceptLicense(Voice) 
+i01_mouth.setVoice(Voice) 
+
+i01_left=Runtime.create("i01.left", "Arduino") 
+i01_left.setBoard("atmega2560") 
+i01_left = Runtime.start("i01.left", "Arduino") 
+i01_left.connect("COM3") 
+
+i01 = Runtime.start("i01", "InMoov2") 
+i01.startMouth() 
+i01_leftHand = Runtime.start("i01.leftHand","InMoov2Hand") 
+i01_leftHand_index.map(0.0,180.0,0.0,180.0) 
+i01_left.attach("i01.leftHand") 
+
+ 
+def publishPin(pins):
+    对于范围内的引脚（0，len（pins））：
+        打印 pins[pin].address，pins[pin].value
+        如果 pins[pin].value<=540：
+          打印“无压力”
+        如果 pins[pin].value>=541 且 pins[pin].value<=542：
+          打印“低压”
+        如果 pins[pin].value>=543 且 pins[pin].value<=544：
+          打印“轻压” 
+          FingerGoesBack()
+        如果 pins[pin].value>=545：
+          打印“高压” 
+          FingerGoesBack() 
+          i01.mouth.speak(u“哎哟，好疼”）
+ 
+i01_left.addListener("publishPinArray","python","publishPin") 
+sleep(5) 
+i01_left.enablePin(54,1) # 54 是引脚 A0，数字 1 是每秒轮询次数
+
+i01_leftHand.setAutoDisable(True) 
+
+def moveFingerSlowly（）：
+    i01_leftHand_index.enable（）
+    i01_leftHand_index.setSpeed（25）
+    睡眠（2）
+    i01_leftHand_index.moveTo（180）
+
+def FingerGoesBack（）：
+    i01_leftHand_index.enable（）
+    i01_leftHand_index.setSpeedy（250）
+    i01_leftHand_index.moveTo（0）
+
+-当通电时，手指会自动缓慢闭合，如果传感器检测到压力，它会在 Python 监视器中显示信息，并停止闭合并说出与他感受到的压力相关的内容。
+
+-您可能需要更改代码中的传感器值以达到更好的调整。
+
+为此，请检查监视器上的结果并根据需要直接在代码中更改这些值：
+
+value<=540
+value>=541
+value<=542
+value>=543
+value<=544
+value>=545
