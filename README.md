@@ -248,198 +248,175 @@
 
 拧紧掌上盖时，确保将丝带整齐地放入凹槽中，并真正避免夹住它们
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/4593eeba-ebe4-4b03-a987-18b3de0b988b)
 
 现在将 M2.5 PTFE 管穿过主齿轮特氟隆管 ID1.5MM X OD2.5MM PTFE 管的长度如下：拇指 335mm 食指 300mm 中间 300mm 无名指 300mm 小指 360mm
 
- 
+特氟隆管 ID1.5MM X OD2.5MM：https://fr.aliexpress.com/item/32730855848.html?spm=a2g0s.9042311.0.0.3b966c37jungcW
 
+![image](https://github.com/user-attachments/assets/c6869df5-8668-40d5-abaa-f28202820ed8)
 
 将管子穿过伺服底座孔。管子距离伺服轴约 1.5 厘米。
 
- 
-
+![image](https://github.com/user-attachments/assets/856c6302-0a94-4b00-8396-9fe386d6fec7)
 
 将鱼线穿过管子
 
+![image](https://github.com/user-attachments/assets/a688dd47-e789-4b34-9b25-0763a78dabf1)
 
-
+![image](https://github.com/user-attachments/assets/cc4eabdd-7103-4e42-9c93-443882715b56)
 
 并将管子的末端放入预留的孔中，直到无法再插入为止
 
- 
-
+![image](https://github.com/user-attachments/assets/086ac96b-6ca4-4716-8d48-04b78a8a863f)
 
 对每根手指重复操作
 
- 
-
+![image](https://github.com/user-attachments/assets/36e2f501-377a-4764-afda-8cfb38a91166)
 
 现在获得 5 个弹簧弹簧 3/16″x1-3/4
 
- 
+弹簧 3/16″x1-3/4：https://www.ebay.com/p/19011685359
 
+![image](https://github.com/user-attachments/assets/bce79c09-6f85-40b7-8de1-3add342a28e5)
 
 将一根鱼线穿过弹簧的一侧。鱼线总长度约为30厘米
 
- 
-
+![image](https://github.com/user-attachments/assets/11735da6-d182-4b12-b289-e63e38106fc9)
 
 将鱼线穿过主指部分的弹簧孔
 
- 
-
+![image](https://github.com/user-attachments/assets/0f5b041c-0abe-4d70-805a-e550ce7f981c)
 
 将弹簧穿过第二个手指部分
 
- 
-
+![image](https://github.com/user-attachments/assets/77f13557-dd22-4674-bb71-4bc5586514b8)
 
 取 5 个小螺丝，我用了一些安装在眼部机构中的伺服器上的螺丝，这些螺丝的直径约为 2 毫米
 
+![image](https://github.com/user-attachments/assets/82b4abd9-b2e2-4461-af26-7fac4dec5d39)
 
-
+![image](https://github.com/user-attachments/assets/2136ad04-982c-4e88-a9b6-0df9f72f42fe)
 
 用钳子将螺丝剪至最大总长度为 4 毫米
 
- 
-
+![image](https://github.com/user-attachments/assets/e2eeacc9-66c5-4f95-a48a-14e4d111b62c)
 
 将弹簧固定到位
 
- 
-
+![image](https://github.com/user-attachments/assets/f391be7f-5f6d-4f34-a3a1-dda18ef23789)
 
 装上那个小螺丝，把弹簧固定到位。确保螺丝没有刺穿三根带状电线
 
- 
-
+![image](https://github.com/user-attachments/assets/d944f639-ca4d-4625-bff2-25041058384e)
 
 获取或切割五颗 3 毫米、最大长度为 4 毫米的螺钉
 
+![image](https://github.com/user-attachments/assets/4f3d2016-5be7-40f0-b6ba-0e58e105aa0e)
 
 拉动鱼线，将弹簧头固定到位，然后安装螺丝。注意，我在螺丝刀上放了一块黑色磁铁，这样可以方便安装螺丝。
 
- 
-
+![image](https://github.com/user-attachments/assets/197173a7-c508-4813-8e24-5ebad896fd5c)
 
 拧紧螺丝之前，先将鱼线拉出来
 
- 
-
+![image](https://github.com/user-attachments/assets/9aedb2fa-fa9c-4aa7-9bf5-25aad548c6f0)
 
 完成拧紧。确保没有刺穿三根带状电线
 
- 
-
+![image](https://github.com/user-attachments/assets/8c955b86-8bb8-4857-859c-5823dab1dd17)
 
 拿两根针
 
- 
-
+![image](https://github.com/user-attachments/assets/7fe6ff5d-29e2-4535-831a-8beb145dd229)
 
 将手指的最后一部分最大限度地折叠起来，并将第一根针穿过手指和弹簧，直到它从另一侧出来。
 
- 
-
- 
-
+![image](https://github.com/user-attachments/assets/1c33a577-d387-4239-847f-18ca5f898e1d)
 
 折叠手指的第二节，并将第二根针穿过手指和弹簧，直至完全穿过。这样可以为每个手指节设置合适的张力。
 
- 
-
+![image](https://github.com/user-attachments/assets/f37e4a03-a357-4fa0-a09e-a0ccb87c6727)
 
 用小钳子剪断针头
 
- 
-
+![image](https://github.com/user-attachments/assets/60b2d6ae-b9e3-4085-8632-bed8a963c92e)
 
 滴一滴强力胶，确保针头不会再出来
 
- 
-
+![image](https://github.com/user-attachments/assets/3cdeabcf-b092-475c-a26b-85fb82592b5b)
 
 是时候用拇指做同样的事情了，只有两个手指部分，所以弹簧的张力较小，不需要针
 
- 
-
+![image](https://github.com/user-attachments/assets/42b0d7ef-3eeb-4bc8-86e5-c44b07cdf656)
 
 拇指的另一个不同之处在于，我们将螺丝拧入盖子中，从而将弹簧固定到位。确保不要刺穿电线。虽然我的图片显示已经装好了拇指盖，但先不要装上，你仍然需要接触到内部。
 
- 
-
+![image](https://github.com/user-attachments/assets/f8c12432-b0ec-4ec2-b8aa-4118486a8924)
 
 让我们把霍尔传感器焊接到电线上。开始焊接中间的电线。注意传感器在图片上的位置，因为一侧是正极，另一侧是负极。霍尔传感器 AH3503
 
+霍尔传感器 AH3503：https://fr.aliexpress.com/item/32899671134.html?src=google&src=google&albch=shopping&acnt=494-037-6276&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&&albagn=888888&albcp=6459793138&albag=77316928277&trgt=743612850714&crea=fr32899671134&netw=u&device=c&gclid=CjwKCAiA_f3uBRAmEiwAzPuaM3NMls2FXydvh7C1B073Ng0wvuwxhDTT_k_XjAtt_-IML73q4LzrOxoCUzkQAvD_BwE&gclsrc=aw.ds
 
+![image](https://github.com/user-attachments/assets/1972425a-9939-4240-8351-8a2842b1157e)
 
+![image](https://github.com/user-attachments/assets/bc96fb95-8c8c-447c-89ff-192b7ab8a708)
 
 用一小块胶带保护焊锡。我用的是Kapton胶带。这部分操作比较精细。
 
+![image](https://github.com/user-attachments/assets/e1760d03-0705-406e-b290-30d93e49b19a)
 
 焊接第二根和第三根电线并用胶带包裹起来
 
- 
-
+![image](https://github.com/user-attachments/assets/83468940-0e6b-44bc-9268-d78a29b2ce64)
 
 缠绕胶带时，胶带的厚度不应超过丝带本身的厚度，否则下一步将其推下去会很困难。
 
- 
-
+![image](https://github.com/user-attachments/assets/6e2acd83-a678-4bdf-afed-8edaae572fb9)
 
 小心地将其推回指尖
 
- 
-
+![image](https://github.com/user-attachments/assets/ac720bf2-8118-41c2-a042-76692403ea96)
 
 这是指尖应该伸出的长度
 
- 
-
+![image](https://github.com/user-attachments/assets/2eabdf03-42b9-42b5-be12-7badc5fe59eb)
 
 你可以拉动手掌中的电线，帮助自己将霍尔传感器推回到尖端
 
- 
-
+![image](https://github.com/user-attachments/assets/82adbf33-4ded-4987-8f22-253f509d7df9)
 
 将钓鱼线缠绕在凹槽周围，然后小心地将手指末端拧到传感器上。
 
- 
-
+![image](https://github.com/user-attachments/assets/57de5978-bb45-4b98-99f3-21e3b49c73f0)
 
 注意，手指末端印有小螺纹，可以顺时针旋转至指尖。请勿用力过猛，否则螺纹会损坏。
 
- 
-
+![image](https://github.com/user-attachments/assets/37977e0c-cbf2-4ced-9a53-4fd071ada312)
 
 完成每个手指的操作。
 
- 
-
+![image](https://github.com/user-attachments/assets/b0382159-8b34-495a-a1e7-02a4f42eb2ad)
 
 你可以用一些 16x3mm 的螺丝安装手指盖。虽然我的图片显示手指盖已经装好了，但先不要装，你仍然需要打开内部。
 
+![image](https://github.com/user-attachments/assets/53df43ea-c462-4fe6-b6e7-b04c19e266fe)
 
 是时候把每根线焊接到 NervoBoard 的传感器板上了。拇指放在“0”上，食指放在“1”上，大拇指放在“2”上，无名指放在“3”上，小指放在“4”上。
 
- 
-
+![image](https://github.com/user-attachments/assets/c9f9af2a-c475-4b56-8fc8-a94daefbd316)
 
 您可以在此页面上查看有关传感器连接的更多信息：https://inmoov.fr/test-your-finger-sensor/
 
- 
-
+![image](https://github.com/user-attachments/assets/fb0b3f27-412e-42eb-8f44-caaaca38c6d1)
 
 这里你可以看到我放置迷你模拟板的位置。你还可以在滑轮上看到，带小垫圈的螺丝是如何将鱼线用一个结固定住的。要做到这一点，你需要在你想要剪断鱼线的地方涂上一些胶水。
 
- 
-
+![image](https://github.com/user-attachments/assets/8b277c42-c4fd-4928-b6bf-bbfca11fb0a3)
 
 要做到这一点，你需要在你想要剪断的编织线上涂点胶水，让接触胶固化。胶水可以让剪断更容易。
 
- 
-
+![image](https://github.com/user-attachments/assets/64ec4e92-c2dc-4121-8e19-6c967ed79b21)
 
 然后，用锋利的剪刀剪掉涂有胶水的地方。
 
